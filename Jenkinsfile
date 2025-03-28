@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage("Compile") {
             steps {
-                echo '${VERSION_NAME}'
+                echo "Version: ${env.VERSION_NAME}"
                 bat 'javac Test.java'
             }
         }
