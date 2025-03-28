@@ -12,4 +12,16 @@ pipeline {
             }
         }
     }
+    
+    post {
+        always {
+            echo 'It will run always'
+        }
+        success {
+            echo 'It is a success'
+        }
+        failure {
+            echo 'Too bad it failed'
+        }
+    }
 }
